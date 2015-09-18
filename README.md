@@ -1,4 +1,4 @@
-Debugging (Some Poetry)
+Lab 2: Debugging (Some Poetry)
 ====
 
 An outcome of CPEN 221 is to help you develop software that is:
