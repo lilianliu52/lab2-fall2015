@@ -1,4 +1,4 @@
-Lab 2: Debugging (Some Poetry)
+CPEN 221 Lab 2: Debugging (Some Poetry)
 ====
 
 An outcome of CPEN 221 is to help you develop software that is:
@@ -9,6 +9,10 @@ An outcome of CPEN 221 is to help you develop software that is:
 ### Debugging 
 
 The purpose of this lab activity is **debugging**. You will gain additional experience reading provided code, understanding it, reviewing it, and debugging some problems associated with it.
+
+### Due Date and Time
+
+You must submit your work by 5:00 p.m. on September 28. Submission instructions can be found at the end of this `README`.
 
 ### Reading code
 
