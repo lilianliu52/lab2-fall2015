@@ -1,0 +1,30 @@
+Lab2.txt
+===
+
+## Code style and smells
+What is good, bad, confusing about the code? Focus only on `Main.java` and `UBCPoet.java`.
+
+The code has many elements which fails fast due to the abundent throws of exceptions that stop the code.
+	
+The code reuse the same variable name for many different tasks whcih becomes confusing since its hard to understand which variable it acrually refering to.:
+
+The code isn't well commented. There are no documentation above most of the methods. This makes reader have a hard time understanding what the code acutally does.
+
+## The First-Line Bug
+
+The first time bug creates an issue due to the fact that the first word of any defination in the dictionary usually starts with "a" which has "metric linear unit" in its synset, and so is returned in the poem. A way to eliminate this bug is to add an if statement which and if so to skip over "a" if present.
+
+
+## The Out-of-Bounds Bug
+
+The line 
+String head = word.substring(0, 2);
+in the code assumes that the word being passed to this string is at least two letters long. This fails, for example, when it is passed the word "a"
+it then throws an out of bounds exception. This can be fixed by introducing an if statement to check for single letter words.
+The bug isn't always reproducible because the pick() method introduces a random element, so it is not always passed a one letter word to fail on.
+
+## The Illegal Argument Bug
+
+The illegal argument bug also stems from the gloss. Since the first "word" is read as "(Genesis", it is not recognized as a word and
+the variable word is assigned " " which throws an exception when it goes through sense(). Therefore the bug isn't ours, but the way we
+read the word has to change. Introduce an if statement to catch glosses that start with punctuation.
